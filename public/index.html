@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SahihAgent - Verify the Truth</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand">SahihAgent</a>
+      <div class="nav-links">
+        <a href="https://sahihfinder.com/Wiki" target="_blank" rel="noopener">Wiki</a>
+        <a href="#agent-console">Searcher</a>
+        <a href="#agent-console">Checker</a>
+        <span id="runtime-pill" class="pill">v0.2</span>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>SahihAgent</h1>
+      <p class="subtitle">An autonomous AI verification agent for Muslims to verify the truth from authentic sources</p>
+      <div class="hero-actions">
+        <a href="#agent-console" class="btn-primary">Start chat</a>
+        <a href="https://sahihfinder.com" target="_blank" rel="noopener" class="btn-secondary">Explore SahihFinder</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="agent-console" class="container">
+    <section class="card welcome-card">
+      <h2>Welcome to SahihAgent</h2>
+      <p>SahihAgent &bull; Beta v0.2</p>
+
+      <div class="quick-prompts">
+        <button type="button" class="chip" data-query="Hadith about intentions and actions">Check: Hadith on Intentions</button>
+        <button type="button" class="chip" data-query="Quran verse about patience and prayer">Check: Patience &amp; Prayer</button>
+        <button type="button" class="chip" data-query="Hadith about seeking knowledge">Check: Seeking Knowledge</button>
+      </div>
+
+      <form id="agent-form" class="search-bar">
+        <input type="text" id="query-input" placeholder="Enter a claim, topic, Hadith, or Quranic query to verify..." required autocomplete="off" />
+        <button type="submit" id="submit-btn">Send</button>
+      </form>
+    </section>
+
+    <section id="results-area" class="results-area"></section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 SahihFinder &bull; Shahadah Studios Elite</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
